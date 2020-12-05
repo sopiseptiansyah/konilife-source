@@ -1,0 +1,121 @@
+.footer-konilife{
+    position: relative;
+    .btn-store{
+        @media(max-width: 640px){
+            display: block;
+            text-align: left;
+            padding-left: unset;
+            width: max-content;
+        }
+    }
+    &__top{
+        background-color: #4C7023;
+        color: #fff;
+        padding: 25px 0;
+        overflow: hidden;
+        .list-contact{
+            list-style: none;
+            @media(max-width: 640px){
+                margin-bottom: 50px;
+            }
+            li{
+                position: relative;
+                margin-bottom: 18px;
+                i{
+                    position: absolute;
+                    left: -38px;
+                    top: -1px
+                }
+                p{
+                    margin-bottom: unset;
+                    font-size: 15px;
+                }
+                a{
+                    margin-bottom: unset;
+                    font-size: 15px;
+                    color: #fff;
+                    text-decoration: none;
+                    transition: all .2s ease-in;
+                    &:hover{
+                        color: darken($color: #fff, $amount: 10%);
+                    }
+                }
+            }
+        }
+        .list-follow{
+            list-style: none;
+            li{
+                position: relative;
+                margin-bottom: 18px;
+                img{
+                    position: absolute;
+                    left: -38px;
+                    top: 0px;
+                    max-width: 20px;
+                    height: auto;
+                    @media(max-width: 640px){
+                            position: relative;
+                            left: unset;
+                            top: unset;
+                            margin-right: 15px;
+                    }
+                }
+                a{
+                    margin-bottom: unset;
+                    font-size: 15px;
+                    color: #fff;
+                    text-decoration: none;
+                    transition: all .2s ease-in;
+                    &:hover{
+                        color: darken($color: #fff, $amount: 10%);
+                    }
+                }
+            }
+            @media(max-width: 640px){
+                display: flex;
+                padding-left: unset;
+                span{
+                    display: none;
+                }
+            }
+        }
+    }
+    &__bottom{
+        padding: 25px 0;
+        background-color: #3B5C19;
+        color: #fff;
+        .copyright{
+            margin-bottom: unset;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 21px;
+            @media(max-width: 640px){
+                text-align: center;
+            }
+        }
+    }
+}
+
+.footer__image{
+    position: absolute;
+    top: -70px;
+    width: 125%;
+    left: 0;
+    @media(max-width: 1024px){
+        top: 0;
+        width: 100%;
+    }
+
+    @media(max-width: 992px){
+        position: relative;
+        left: unset;
+        margin-top: -160px;
+    }
+    @media(max-width: 640px){
+        margin-top: unset;
+        position: absolute;
+        max-width: 220px;
+        right: 15px;
+        top: -190px;
+    }
+}

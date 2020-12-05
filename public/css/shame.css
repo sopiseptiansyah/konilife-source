@@ -1,0 +1,71 @@
+.floating-ref {
+  bottom: 0;
+}
+.article-single__title {
+  color: #333;
+}
+.introduction .introduction-card img {
+  width: auto;
+  height: 44px;
+}
+.introduction__image {
+  max-width: unset !important;
+  height: 380px;
+  left: -26%;
+}
+
+@media (max-width: 640px) {
+  .card-how-to-use.hasil-uji-klinis {
+    margin-top: 40px;
+  }
+
+  .card-how-to-use__title {
+    /* margin-top: -70px; */
+    font-size: 20px;
+    text-align: left !important;
+  }
+
+  .introduction__image {
+    max-width: 90% !important;
+    height: auto;
+    left: 0;
+    top: -30px;
+  }
+
+  .product-item__image {
+    max-width: 100%;
+    margin-top: 15px;
+    margin-left: -10px;
+  }
+
+  .product-item__image img {
+    width: 120%;
+  }
+
+  .about-thumb img {
+    max-width: unset;
+    height: 300px;
+    margin-left: -210px;
+  }
+
+  .composition__image {
+    max-height: 220px;
+    margin-right: auto;
+  }
+
+  .composition__heading {
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+
+  .composition__description {
+    font-size: 14px;
+  }
+}
+
+
+.product-carousel img {
+    max-width: 120%;
+    width: 120%;
+}

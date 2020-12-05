@@ -1,0 +1,77 @@
+.navbar-konilife {
+    z-index: 2;
+    .navbar-brand {
+        img {
+            max-width: 150px;
+            height: auto;
+        }
+    }
+
+    .navbar-nav {
+        .nav-item {
+            margin-left: 10px;
+
+            .nav-link {
+                font-weight: normal;
+                color: #000;
+                transition: all .2s ease-in-out;
+
+                &:hover {
+                    color: #326436;
+                }
+
+                &.active {
+                    color: #326436;
+                    font-weight: 600;
+                }
+            }
+
+            &__social {
+                margin-left: unset;
+                display: flex;
+                align-items: center;
+                margin-left: 15px;
+
+                .nav-link {
+                    padding: 0;
+                    opacity: 0.8;
+
+                    &:hover {
+                        opacity: 1;
+                    }
+
+                    &:last-child {
+                        margin-left: 8px;
+                    }
+                }
+            }
+        }
+    }
+
+    .navbar-toggler {
+        border-color: transparent;
+        outline: none;
+        &[aria-expanded="true"] {
+            // background-color: #000;
+            .hamburger {
+                .hamburger-inner {
+                    transition-delay: .22s;
+                    transition-timing-function: cubic-bezier(.215, .61, .355, 1);
+                    transform: translate3d(0, -10px, 0) rotate(-45deg);
+                    top: 100%;
+                    &::before {
+                        top: 0;
+                        transition: top .1s cubic-bezier(.33333, 0, .66667, .33333) .16s, transform .13s cubic-bezier(.215, .61, .355, 1) .25s;
+                        transform: rotate(-90deg);
+                    }
+
+                    &::after {
+                        top: 0;
+                        transition: top .2s cubic-bezier(.33333, 0, .66667, .33333), opacity .1s linear .22s;
+                        opacity: 0;
+                    }
+                }
+            }
+        }
+    }
+}

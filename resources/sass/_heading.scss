@@ -1,0 +1,10 @@
+.heading{
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    position: relative;
+    &__small{
+        font-size: 18px;
+        margin-bottom: 25px;
+    }
+}

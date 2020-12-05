@@ -1,0 +1,97 @@
+main {
+  overflow: hidden;
+}
+
+.section {
+  position: relative;
+  &__banner {
+    // min-height: calc(100vh - 404px);
+    padding-bottom: 50px;
+    background-color: #fdf6dc;
+  }
+  &__produk {
+    padding: 75px 0;
+    background-color: #fdf6dc;
+    &__content {
+      overflow: hidden;
+    }
+  }
+  &__introduce {
+    .ls-layers {
+      overflow: visible;
+    }
+  }
+
+  &__article {
+    padding: 75px 0;
+    background-color: #fdf6dc;
+  }
+
+  &__product {
+    padding: 75px 0;
+    background-color: #fdf6dc;
+    .slick-dots {
+      bottom: -35px;
+    }
+  }
+  &__about {
+    padding: 75px 0;
+    padding-bottom: 25px;
+    background-color: #fdf6dc;
+  }
+  &__contact {
+    min-height: 100vh;
+    height: auto;
+    overflow: hidden;
+  }
+}
+
+.ls-dots-content {
+  @media (max-width: 992px) {
+    font-size: 12px !important;
+    top: 0px !important;
+  }
+}
+
+.row-introduction {
+  @media (max-width: 640px) {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+}
+
+.floating-ref {
+  display: flex;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 99;
+  @media (max-width: 640px) {
+    display: none;
+  }
+  a {
+    margin-left: 15px;
+  }
+}
+
+.tooltip-shopping {
+  opacity: 1 !important;
+  .shop-title {
+    color: #326436;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .arrow {
+    z-index: 12;
+    &::before {
+      border-top-color: #fff;
+    }
+  }
+  .tooltip-inner {
+    background: rgba(255, 255, 255, 0.83);
+    box-shadow: 16px 20px 40px rgba(17, 42, 55, 0.05);
+    backdrop-filter: blur(40px);
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
